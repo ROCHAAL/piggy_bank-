@@ -24,9 +24,9 @@ describe 'PiggyBank' do
     expect(piggy_bank.shake).to eq('cling')
   end
 
-  it 'can break and have the coins saved'do
-  piggy_bank = PiggyBank.new
-  piggy_bank.break
+    it 'can break and have the coins saved'do
+      piggy_bank = PiggyBank.new
+      piggy_bank.break
   expect(piggy_bank.break).to eq(5)
 end
 
