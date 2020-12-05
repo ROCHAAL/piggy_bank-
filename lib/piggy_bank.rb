@@ -11,4 +11,12 @@ end
   def count
     @input_coins
   end
+
+  def shake
+    'cling'
+  end
+
+  def break
+@input_coins = 5
+  end
 end

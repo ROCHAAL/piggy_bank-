@@ -15,6 +15,16 @@ describe 'PiggyBank' do
     piggy_bank.insert(5)
     expect(piggy_bank.count).to eq(5)
   end
+  it 'can check if there is coins inside'do
+    piggy_bank = PiggyBank.new
+    piggy_bank.shake
+    expect(piggy_bank.shake).to eq('cling')
+  end
+  it 'can break and have the coins saved'do
+  piggy_bank = PiggyBank.new
+  piggy_bank.break
+  expect(piggy_bank.break).to eq(5)
+end 
 
 end
 
