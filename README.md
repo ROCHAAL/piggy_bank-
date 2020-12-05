@@ -1,6 +1,6 @@
 # Piggy_bank-
 
-##User stories
+## User stories
 
 ```
 As a user,
