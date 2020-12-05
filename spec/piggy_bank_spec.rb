@@ -10,6 +10,11 @@ describe 'PiggyBank' do
     piggy_bank.insert(0)
     expect(piggy_bank).to respond_to(:insert).with(1).argument
   end
+  it 'takes 5 coins'do
+    piggy_bank = PiggyBank.new
+    piggy_bank.insert(5)
+    expect(piggy_bank.count).to eq(5)
+  end
 
 end
 
