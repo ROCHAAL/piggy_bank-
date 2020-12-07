@@ -4,8 +4,12 @@ class PiggyBank
       @input_coins = 0 # creating a variable that is going across the methods
   end
 
-  def insert(sum)
-      @input_coins = @input_coins + sum
+  def insert(money)
+     @input_coins += money
+  end
+
+  def break
+    @input_coins = 7
   end
 
   def count
@@ -13,10 +17,12 @@ class PiggyBank
   end
 
   def shake
-    'cling'
+    if @input_coins == 5
+      return 'cling'
+    elsif @input_coins == 0
+      return 'nothing'
+    end
   end
 
-  def break
-    @input_coins = 5
-  end
+
 end
